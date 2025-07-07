@@ -18,7 +18,6 @@ public class Time {
     private LocalDate fundacao;
 
     @OneToMany(mappedBy = "time")
-    @JsonManagedReference
     private List<Atleta> atletas;
 
     public Long getId() {

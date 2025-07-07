@@ -15,7 +15,6 @@ public class Atleta {
 
     @ManyToOne
     @JoinColumn(name = "id_time", referencedColumnName = "id")
-    @JsonBackReference
     private Time time;
 
     public Long getId() {
